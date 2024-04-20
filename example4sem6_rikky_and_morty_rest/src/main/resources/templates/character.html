@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Info</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+<a href="../characters"><button><box-icon name='chevron-left'></box-icon>Back</button></a>
+<h1 class="header1_center">Character Info</h1>
+<div class="character_info">
+    <div class="character_img">
+        <img th:src="${character.image}" alt="No image found"/>
+    </div>
+    <div class="property-list">
+        <h2 th:text="${character.name}"></h2>
+        <p class="property" th:text="${character.id}"></p>
+        <p class="property" th:text="${character.status}"></p>
+        <p class="property" th:text="${character.species}"></p>
+        <p class="property" th:text="${character.gender}"></p>
+        <p class="property" th:text="${character.url}"></p>
+        <p class="property" th:text="${character.created}"></p>
+    </div>
+</div>
+</body>
+</html>

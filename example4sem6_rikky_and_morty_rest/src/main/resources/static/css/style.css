@@ -1,0 +1,37 @@
+.header1_center {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .item {
+    width: 200px;
+    margin: 40px;
+    background-color: #efefef;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.container .item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box-shadow on all sides */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.character_info {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick and Morty</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+<h1 class="header1_center">Rick And Morty</h1>
+<div class="container">
+    <tr th:each="character: ${characters}">
+        <div class="item">
+            <img th:src="${character.image}" alt="Image not found"/>
+            <div class="item-info">
+                <h3 th:text="${character.id}"></h3>
+                <h3 th:text="${character.name}"></h3>
+                <a th:href="@{../../character/{id}(id=${character.id})}"><button>Choose</button></a>
+            </div>
+        </div>
+    </tr>
+</div>
+</body>
+</html>
